@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website - Jeremy Fransraka Alexander Ginting</title>
+    <title>About Me - Jeremy Fransraka Alexander Ginting</title>
     <!-- Hubungkan External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Website Jeremy Fransraka Alexander Ginting</h1>
+        <h1>Tentang Saya</h1>
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
             <a href="project.html">Project</a>
             <a href="contact.html">Contact</a>
             <a href="game.html">Game</a>
@@ -21,19 +21,40 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="card-section home-hero">
-            <img src="assets/foto.jpg" alt="Foto Profil Jeremy" class="foto-profil">
-            
-            <h2>Hai, saya Jeremy Fransraka Alexander Ginting</h2>
-            <p>Saya adalah mahasiswa program studi Pendidikan Sistem dan Teknologi Informasi (PSTI) Universitas Pendidikan Indonesia yang sedang mendalami pemrograman web.</p>
-            <p>Website ini dibuat sebagai media portofolio untuk menampilkan profil, proyek, game favorit, serta sarana komunikasi.</p>
-            <p>Ayo jelajahi website ini dan kenali lebih jauh tentang diriku!</p>
-
-            <div class="home-actions">
-                <a href="about.html" class="btn-primary">Lihat Profil Saya</a>
-                <a href="contact.html" class="btn-secondary">Hubungi Saya</a>
+        <!-- Section 1: Biodata Diri (Foto & Data Sejajar) -->
+        <section class="card-section">
+            <h2>Biodata Diri</h2>
+            <div class="profile-layout">
+                <img src="assets/foto.jpg" alt="Foto Profil Jeremy" class="foto-profil">
+                <ul class="bio-list">
+                    <li><strong>Nama Lengkap:</strong> Jeremy Fransraka Alexander Ginting</li>
+                    <li><strong>NIM:</strong> 2508141</li>
+                    <li><strong>Program Studi:</strong> Pendidikan Sistem dan Teknologi Informasi</li>
+                    <li><strong>Perguruan Tinggi:</strong> Universitas Pendidikan Indonesia</li>
+                    <li><strong>Email:</strong> jere181019@gmail.com</li>
+                </ul>
             </div>
+        </section>
+
+        <!-- Section 2: Hobi & Minat -->
+        <section class="card-section">
+            <h2>Hobi & Minat</h2>
+            <ul>
+                <li>Bermain Game (Free Fire, Mobile Legends, Point Blank)</li>
+                <li>Menonton Film</li>
+                <li>Membaca Webtoon</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Riwayat Pendidikan -->
+        <section class="card-section">
+            <h2>Riwayat Pendidikan</h2>
+            <ol>
+                <li>SD ST. Antonius</li>
+                <li>SMPN 10 Medan</li>
+                <li>SMAK 2 Budi Murni Medan</li>
+                <li>Universitas Pendidikan Indonesia - S1 Pendidikan Sistem dan Teknologi Informasi (2025 - Sekarang)</li>
+            </ol>
         </section>
     </main>
 
