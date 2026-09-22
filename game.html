@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Favorit - Jeremy Fransraka Alexander Ginting</title>
+    <title>Daftar Game Favorit - Jeremy Fransraka Alexander Ginting</title>
+    <!-- Hubungkan External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Daftar Game Favorit</h1>
-        <p>Daftar game yang sering saya mainkan ketika waktu luang.</p>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="project.html">Project</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="game.html">Game Favorit</a>
+        <p style="text-align: center; color: #a89ba9;">Daftar game yang sering saya mainkan ketika waktu luang.</p>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="game.html" class="active">Game</a>
         </nav>
         <hr>
     </header>
 
     <main>
         <!-- Game 1: Free Fire -->
-        <article>
+        <article class="card-section">
             <h2>1. Free Fire</h2>
-            <img src="https://media.hitekno.com/thumbs/2021/06/01/13990-logo-free-fire-youtube-garena-free-fire-pakistan/730x480-img-13990-logo-free-fire-youtube-garena-free-fire-pakistan.jpg" alt="Logo Free Fire" width="320" style="border-radius: 8px;">
-            <p><strong>Genre:</strong> Battle Royale</p>
+            <img src="https://media.hitekno.com/thumbs/2021/06/01/13990-logo-free-fire-youtube-garena-free-fire-pakistan/730x480-img-13990-logo-free-fire-youtube-garena-free-fire-pakistan.jpg" alt="Logo Free Fire" class="game-img">
+            <p><strong>Genre:</strong> <span class="tag-genre">Battle Royale</span></p>
             <p><strong>Deskripsi:</strong> Game aksi bertahan hidup di mana pemain bertarung di sebuah pulau untuk menjadi pemain atau tim terakhir yang bertahan hidup.</p>
         </article>
-        <hr>
 
         <!-- Game 2: Mobile Legends -->
-        <article>
+        <article class="card-section">
             <h2>2. Mobile Legends: Bang Bang</h2>
-            <img src="https://mmc.tirto.id/image/otf/398x0,q70/2025/09/16/mobile-legends--2_ratio-16x9.jpg" alt="Logo Mobile Legends" width="320" style="border-radius: 8px;">
-            <p><strong>Genre:</strong> MOBA (Multiplayer Online Battle Arena)</p>
+            <img src="https://mmc.tirto.id/image/otf/398x0,q70/2025/09/16/mobile-legends--2_ratio-16x9.jpg" alt="Logo Mobile Legends" class="game-img">
+            <p><strong>Genre:</strong> <span class="tag-genre">MOBA (Multiplayer Online Battle Arena)</span></p>
             <p><strong>Deskripsi:</strong> Game pertarungan 5 vs 5 di perangkat mobile yang mengutamakan kerja sama tim, pemilihan strategi hero, dan penguasaan lane untuk menghancurkan base lawan.</p>
         </article>
-        <hr>
 
         <!-- Game 3: Point Blank -->
-        <article>
+        <article class="card-section">
             <h2>3. Point Blank</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/id/5/57/Pointblanklogo.jpg" alt="Logo Point Blank" width="300" style="border-radius: 8px;">
-            <p><strong>Genre:</strong> First-Person Shooter (FPS)</p>
+            <img src="https://upload.wikimedia.org/wikipedia/id/5/57/Pointblanklogo.jpg" alt="Logo Point Blank" class="game-img">
+            <p><strong>Genre:</strong> <span class="tag-genre">First-Person Shooter (FPS)</span></p>
             <p><strong>Deskripsi:</strong> Game tembak-menembak taktis legendaris di PC yang mempertarungkan faksi CT-Force dan Free Rebels dalam pertempuran yang intens dan penuh ketangkasan.</p>
         </article>
     </main>

@@ -3,50 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Jeremy Fransraka Alexander Ginting</title>
+    <title>Contact Me - Jeremy Fransraka Alexander Ginting</title>
+    <!-- Hubungkan External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Hubungi Saya</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="project.html">Project</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="game.html">Game Favorit</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="game.html">Game</a>
         </nav>
         <hr>
     </header>
 
     <main>
-        <section>
+        <!-- Section 1: Formulir Kirim Pesan -->
+        <section class="card-section">
+            <h2>Kirim Pesan</h2>
             <p>Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, silakan isi formulir di bawah ini atau hubungi kontak saya secara langsung.</p>
             
-            <h2>Kirim Pesan</h2>
-            <form action="#" method="post">
-                <p>
-                    <label for="name">Nama Lengkap:</label><br>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
                     <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
-                </p>
-                <p>
-                    <label for="email">Alamat Email:</label><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
                     <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
-                </p>
-                <p>
-                    <label for="message">Pesan:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="35" placeholder="Tuliskan pesan Anda..."></textarea>
-                </p>
-                <button type="submit">Kirim Pesan</button>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
             </form>
         </section>
 
-        <section>
+        <!-- Section 2: Kontak Langsung -->
+        <section class="card-section">
             <h2>Informasi Kontak Langsung</h2>
-            <ul>
+            <ul class="contact-info-list">
                 <li><strong>Email Pribadi:</strong> <a href="mailto:jere181019@gmail.com">jere181019@gmail.com</a></li>
                 <li><strong>Email Kampus:</strong> <a href="mailto:jeremy18@student.upi.edu">jeremy18@student.upi.edu</a></li>
                 <li><strong>Lokasi:</strong> Universitas Pendidikan Indonesia</li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/jeremy18-beep" target="_blank">github.com/jeremy18-beep</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/jeremy18-beep" target="_blank" rel="noopener noreferrer">github.com/jeremy18-beep</a></li>
             </ul>
         </section>
     </main>

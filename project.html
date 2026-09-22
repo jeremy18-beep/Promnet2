@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Jeremy Fransraka Alexander Ginting</title>
+    <title>My Projects - Jeremy Fransraka Alexander Ginting</title>
+    <!-- Hubungkan External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Proyek Saya</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="project.html">Project</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="game.html">Game Favorit</a>
+        <h1>Daftar Project</h1>
+        <p style="text-align: center; color: #a89ba9;">Berikut adalah beberapa project yang pernah saya kerjakan sebelumnya.</p>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html" class="active">Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="game.html">Game</a>
         </nav>
         <hr>
     </header>
 
     <main>
-        <section>
-            <h2>1. Miniatur Gedung Kampus UPI Purwakarta</h2>
-            <p>Proyek pembuatan karya maket dan miniatur kampus Universitas Pendidikan Indonesia Kampus Purwakarta.</p>
-            <img src="assets/foto miniatur upi.jpeg" alt="Miniatur UPI" width="320" style="border-radius: 8px;">
-        </section>
-        <br>
-        <section>
-            <h2>2. Website Balikan Modulo (Matematika Diskrit)</h2>
-            <p>Aplikasi web kalkulator interaktif untuk menghitung aritmetika modular dan invers balikan modulo.</p>
-            <img src="assets/website matdis.jpeg" alt="Website Matdis" width="320" style="border-radius: 8px;">
-            <p><a href="https://balikan-modulo.vercel.app" target="_blank">Lihat Live Website Balikan Modulo &rarr;</a></p>
+        <!-- Project 1: Miniatur UPI Purwakarta -->
+        <article class="card-section">
+            <h2>Project 1: Miniatur UPI Purwakarta</h2>
+            <p>Miniatur kampus UPI Purwakarta yang dilengkapi sistem penerangan lampu jalan otomatis dan alat pendeteksi gempa berbasis sensor.</p>
+            
+            <div class="gambar-gallery">
+                <img src="assets/miniatur upi.jpeg" alt="Foto Project 1 Miniatur UPI" class="project-img">
+                <img src="assets/foto miniatur upi.jpeg" alt="Foto Project 2 Miniatur UPI" class="project-img">
+            </div>
+
+            <p><strong>Deskripsi Detail:</strong> Miniatur UPI Purwakarta ini memiliki sistem lampu di bagian trotoar jalanannya, dan juga di dalam miniatur gedung UPI terdapat sistem alat untuk mendeteksi getaran gempa bumi.</p>
+
+            <h3>Teknologi yang Digunakan</h3>
+            <ul>
+                <li>Serabut Kabel & Rangkaian Elektronik</li>
+                <li>Buzzer Alarm</li>
+                <li>Sistem Sensor Pendeteksi Getaran</li>
+            </ul>
+        </article>
+
+        <!-- Ringkasan Portofolio Project (Tabel) -->
+        <section class="card-section">
+            <h2>Ringkasan Portofolio Project</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Ringkasan Portofolio Project</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">No.</th>
+                        <th rowspan="2">Nama Project</th>
+                        <th colspan="2">Detail Project</th>
+                    </tr>
+                    <tr>
+                        <th>Teknologi</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td>Miniatur UPI Purwakarta</td>
+                        <td>Serabut Kabel, Buzzer, Sensor</td>
+                        <td><span class="status-badge">Selesai</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
